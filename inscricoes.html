@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Inscrições - Semana Tech 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="inscricoes.js" defer=""></script>
+</head>
+<body class="inscricoes">
+
+  <header>
+    <h1>Semana Tech 2026</h1>
+    <a href="index.html">← Voltar às oficinas</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tema da Página</h2>
+      <button onclick="mudarTema()">Mudar Tema</button>
+    </section>
+
+    <section class="inscricoesSecao">
+      <h2>Minhas Inscrições Selecionadas</h2>
+      
+      <div id="inscricoesLista" class="listaInscricoes"></div>
+
+      <div class="resumoContainer">
+        <p><strong>Quantidade de oficinas selecionadas:</strong> <span id="totalQtd">0</span></p>
+        <p><strong>Valor total da inscrição:</strong> R$ <span id="totalValor">0,00</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div id="modalConfirmacao">
+    <div class="caixaModal">
+      <p>Deseja realmente remover esta oficina da sua inscrição?</p>
+      <div class="bntModal">
+        <button id="bntCancelar" class="bntCancelar">Cancelar</button>
+        <button id="bntConfirmar" class="bntConfirmar">Confirmar remoção</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
