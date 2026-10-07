@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semana Tech 2026 - Oficinas</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer=""></script>
+    </head>
+    <body>
+
+    <header>
+        <section>
+            <h1>Semana Tech 2026</h1>
+            <button class="botaoMenu" onclick="abrirMenu()">☰ Menu</button>
+            <nav id="menu">
+                <a href="#inicio">Início</a>
+                <a href="#oficinas">Oficinas</a>
+                <a href="inscricoes.html" id="linkInscricoes">Minhas inscrições (0)</a>
+                <a href="minha-conta.html" id="linkMinhaConta">Minha Conta</a>
+            </nav>
+           
+        </section>
+      
+    </header>
+
+    <main>
+        <section class="containerCarrosel" id="inicio">
+            <div class="carrosselSlide">
+                <img id="carroselImg" src="" alt="Banner Evento">
+                <div id="parteCarrossel" class="parteCarrossel"></div>
+            </div>
+            <div class="controlesCarrossel">
+                <button id="bntAnterior">Anterior</button>
+                <button id="bntProximo">Próximo</button>
+            </div>
+        </section>
+        <section>
+            <h2>Tema da Página</h2>
+            <button onclick="mudarTema()" id="mudarTema">Mudar Tema</button>
+        </section>
+
+        <section class="filtroContainer">
+        <div class="filtroGrupo">
+            <label for="inputBusca">Buscar oficina:</label>
+            <input type="text" id="inputBusca" placeholder="Buscar oficina...">
+        </div>
+
+        <div class="filtroGrupo">
+            <label for="selectOrdenacao">Ordenar por:</label>
+            <select id="selectOrdenacao">
+            <option value="padrao">Selecione</option>
+            <option value="menor">Menor valor</option>
+            <option value="maior">Maior valor</option>
+            </select>
+        </div>
+        </section>
+
+        <section class="oficinas" id="oficinas">
+            <h2>Oficinas Disponíveis</h2>
+            <div id="oficinasContainer" class="cardsGrid"></div>
+            <p id="semResultados" class="hidden">Nenhuma oficina encontrada.</p>
+        </section>
+    </main>
+
+    </body>
+</html>
