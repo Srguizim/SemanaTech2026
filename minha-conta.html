@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area do Participante</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="participante.js" defer></script>
+</head>
+<body class="conta">
+    <header>
+        <h1>Semana Tech 2026</h1>
+        <a href="index.html">← Voltar às oficinas</a>
+    </header>
+    <main>
+        <section class="tema">
+            <h2>Tema da Página</h2>
+            <button onclick="mudarTema()">Mudar Tema</button>
+        </section>
+
+        <section class="cadastro">
+            <h2>Minha Conta</h2>
+            <p>Bem-vindo(a) à sua área do participante! Aqui você pode gerenciar suas informações e acompanhar suas inscrições.</p>
+            <div class="formulario">
+                <input type="text" 
+                id="nome" 
+                placeholder="Digite seu nome completo"
+                oninput="validarNome()">
+
+                <p id="mensagemNome"></p>
+
+                <input type="email" 
+                id="email"
+                placeholder="Digite seu e-mail"
+                oninput="validarEmail()">
+
+                <p id="mensagemEmail"></p>
+
+                <input type="number"
+                id="idade"
+                placeholder="Digite sua idade"
+                oninput="validarIdade()">
+
+                <input type="text"
+                id="cidade"
+                placeholder="Digite sua cidade"
+                oninput="validarCidade()">
+
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <button id="mostrarSenha" type="button" onclick="mostrarSenha()">👁️</button>
+
+                <button onclick="salvarDados()">Salvar Dados</button>
+
+                <p id="msgConfirmacao"> Dados atualizados com sucesso!!</p>
+            </div>
+        </section>
+
+<section class="perfil">
+
+    <h2>Imagem de perfil</h2>
+
+
+    <div class="imagem-principal">
+        <img id="imagemPrincipal" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlqnzbaCC03Domk9vIEKI_E_yG-ri1BeIb2nYPAI8rGg&s=10" alt="Imagem de perfil">
+    </div>
+
+
+    <div class="miniaturas">
+
+        <img src="https://img.magnific.com/vetores-premium/uma-pessoa-com-uma-camisa-azul-que-diz-o-nome-da-pessoa_1029948-7040.jpg?semt=ais_hybrid&w=740&q=80"
+             alt=""
+             onclick="trocarImagem(this)">
+
+        <img src="https://static.vecteezy.com/system/resources/previews/005/419/157/non_2x/female-user-profile-avatar-is-a-woman-a-character-for-a-screen-saver-with-emotions-illustration-on-a-white-isolated-background-vector.jpg"
+             alt=""
+             onclick="trocarImagem(this)">
+
+        <img src="https://st5.depositphotos.com/51587144/66212/v/450/depositphotos_662124514-stock-illustration-profile-image-woman-avatar-social.jpg"
+             alt=""
+             onclick="trocarImagem(this)">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTC0z9Ax0hO6md8bM_otxq8BfmUfBflogosB3-2QZ9qBFvP3zKTzIc0BH4&s=10"
+             alt=""
+             onclick="trocarImagem(this)">
+
+    </div>
+
+  
+
+
+    <div class="dadosPerfil" id="dados">
+        <h2>Meu Perfil</h2>
+        <p> Nome:</p>
+        <p> Email:</p>
+        <p> Idade:</p>
+        <p> Cidade:</p>
+    </div>
+
+</section>
+    </main>
+
+</body>
+</html>
